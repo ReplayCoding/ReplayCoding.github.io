@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dincrypt</title>
+	<style type="text/css">
+		@font-face {
+		    font-family: Entypo;
+		    src: url("Entypo.otf") format("opentype");
+		}
+		.centered {
+		  position: fixed;
+		  top: 50%;
+		  left: 50%;
+		  /* bring your own prefixes */
+		  transform: translate(-50%, -50%);
+		  white-space: nowrap;
+		  text-align: center;
+		}
+		.middle {
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+			width:80%;
+		}
+		p, input{display:block}
+		.entypo {
+			font-family: Entypo;
+			font-size: 40px;
+		}
+		.red {
+			background-color: #4c76ba;
+			color: white;
+
+		}
+		.yellow {
+			background-color: #e8965c;
+			color: white;
+		}
+		.green {
+			background-color: #ace55b;
+			color: white;
+			font-size: 35px;
+		}
+		span {
+			border: 2% dashed white;
+			border-radius: 2px;
+			padding-left: 4px;
+			padding-right: 4px;
+			user-select: none;
+		}
+		.symbol {
+			color:white;
+		}
+		body {
+			background-color: #ee14aa;
+			font-family: sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<div class="centered">
+		<h1 style="color:white;">Dingcrypt</h1>
+		<p style="color: white;">
+			Welcome to Dingcrypt! Try to figure out what the secret message says by guessing what letter each symbol stands for.
+			<br><br>
+			To take a guess, type the letter that you are thinking about, and then click on the symbol that you think represents that letter
+			<br><br>
+			<b>HINT:</b> Some letters are more common than others! Good Luck!
+
+		</p>
+		<p id="encrypted"></p>
+	</div>
+	<script src="bundle.js"></script>
+</body>
+</html>
